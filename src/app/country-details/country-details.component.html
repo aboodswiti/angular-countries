@@ -1,0 +1,86 @@
+<app-not-found *ngIf="!isNoError" [ErrorMessage]="errorMessage">
+</app-not-found>
+
+<div class="container-div" *ngIf="isNoError">
+  <div
+    *ngIf="isLoading"
+    class="spinner-border text-primary"
+    style="width: 7rem; height: 7rem"
+    role="status"
+  >
+    <span class="sr-only">Loading...</span>
+  </div>
+
+  <div *ngIf="!isLoading" class="card mb-3 shadow-lg p-3 mb-5 rounded">
+    <a style="width: 5rem">
+      <button
+        type="button"
+        class="btn btn-outline-secondary"
+        (click)="onClickBack()"
+      >
+        &#8678; Back
+      </button>
+    </a>
+
+    <div class="row g-0">
+      <div class="col-md-6">
+        <div class="card-body">
+          <h3 class="card-title">{{ country.name }}</h3>
+          <ul class="list-group">
+            <li class="list-group-item">Region : {{ country.region }}</li>
+            <li class="list-group-item">Subregion : {{ country.subregion }}</li>
+            <li class="list-group-item">Capital: {{ country.capital }}</li>
+            <li class="list-group-item">
+              Population : {{ country.population | number }}
+            </li>
+            <li class="list-group-item">
+              Languages :
+
+              <span *ngFor="let Language of country.languages; last as l">
+                {{ Language.name }}
+                <span *ngIf="!l"> | </span>
+              </span>
+            </li>
+            <li
+              class="list-group-item"
+              (click)="onClickBorders()"
+              style="cursor: pointer"
+              *ngIf="isThereBorders"
+            >
+              <button type="button" class="btn btn-link">
+                <h5>Borders:</h5>
+              </button>
+            </li>
+            <li
+              class="list-group-item list-group-item-action"
+              *ngIf="!isThereBorders"
+            >
+              Borders: None
+            </li>
+
+            <span *ngIf="showBorders">
+              <li
+                class="list-group-item list-group-item shadow mb-1 mt-1 rounded"
+                style="
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: flex-start;
+                "
+                *ngFor="let border of borders"
+                [routerLink]="['/countries/', border.alpha3Code]"
+              >
+                <a style="color: rgb(32, 190, 211)">
+                  {{ border.name }}
+                </a>
+              </li>
+            </span>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <img src="{{ country.flag }}" alt="..." />
+      </div>
+    </div>
+  </div>
+</div>
