@@ -1,0 +1,45 @@
+.card {
+  margin-bottom: 30px;
+  margin-left: 5px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p {
+  margin: 0;
+}
+img {
+  height: 12.55rem;
+  width: 100%;
+}
+
+.form-dev {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+input {
+  width: 400px;
+  height: 40px;
+}
+select {
+  width: 200px;
+  height: 40px;
+}
+.country-panels {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  flex-wrap: wrap;
+}
+
+.form-control::placeholder {
+  font-family: FontAwesome;
+}
