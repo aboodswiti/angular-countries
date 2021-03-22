@@ -1,0 +1,14 @@
+body,
+.card,
+ul,
+li,
+.list-group-item,
+input,
+nav,
+.navbar,
+.navbar-brand,
+a {
+  background: var(--theme-background);
+  color: var(--theme-color);
+  transition: all ease-in-out 400ms;
+}
