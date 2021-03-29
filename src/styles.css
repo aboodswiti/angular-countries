@@ -3,6 +3,14 @@
 /* @import "~bootstrap/dist/css/bootstrap.min.css" */
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import './resources/styles/themes/dark.css';
-@import './resources/styles/base.css';
-
+@import"~font-awesome/css/font-awesome.css";
+:root {
+    --primary-color: #fff;
+    --background-color: #fff;
+    --text-color: #2d2d2d;
+  }
+  
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }

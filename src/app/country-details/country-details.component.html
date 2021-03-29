@@ -47,7 +47,7 @@
               style="cursor: pointer"
               *ngIf="isThereBorders"
             >
-              <button type="button" class="btn btn-link">
+              <button type="button" class="btn btn-outline-secondary pt-3">
                 <h5>Borders:</h5>
               </button>
             </li>
@@ -69,7 +69,7 @@
                 *ngFor="let border of borders"
                 [routerLink]="['/countries/', border.alpha3Code]"
               >
-                <a style="color: rgb(32, 190, 211)">
+                <a >
                   {{ border.name }}
                 </a>
               </li>

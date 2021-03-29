@@ -1,0 +1,28 @@
+<nav
+  class="navbar navbar-light justify-content-between shadow p-10 mb-1 rounded"
+>
+  <a routerLink="/countries">
+    <h5 class="title font-weight-bold" >Where in the world ?</h5>
+  </a>
+
+  <div >
+    <h5 class="dark-mode">
+      <span class="dark-icon" >
+        <i class="fa fa-moon-o moonDark" aria-hidden="true"></i>
+        <input class="dark-mode" type="checkbox" name="dark"  [formControl]="darkTheme" />
+      </span>
+      Dark Mode
+    </h5>
+  </div>
+</nav>
+
+<!-- <nav class="navbar navbar-light">
+    <div class="container">
+      <a routerLink="" class="navBarTitle">Where in the world?</a>
+      <label for="darkTheme">
+        <i class="fa fa-moon-o moonDark" aria-hidden="true"></i>
+        Dark Theme
+        <input id="darkTheme" type="checkbox" [formControl]="darkTheme" />
+      </label>
+    </div>
+  </nav> -->

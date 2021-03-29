@@ -1,6 +1,6 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,21 +10,23 @@ import { CountryDetailsComponent } from './country-details/country-details.compo
 import { NotFoundComponent } from './not-found/not-found.component';
 import { CountriesService } from './services/countries.service';
 import { ThemeService } from './services/theme.service';
-
+import { HeaderComponent } from './components/header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
     CountriesComponent,
     CountryDetailsComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
   ],
-  providers: [ThemeService,CountriesService],
-  bootstrap: [AppComponent]
+  providers: [ThemeService, CountriesService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

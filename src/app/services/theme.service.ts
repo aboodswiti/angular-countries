@@ -1,13 +1,30 @@
-import { BehaviorSubject, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
 
-@Injectable()
+export const darkTheme = {
+  'primary-color': '#2c2c33',
+  'background-color': '#2c2c33',
+  'text-color': '#fff',
+};
+
+export const lightTheme = {
+  'primary-color': '#fff',
+  'background-color': '#ffff',
+  'text-color': '#282524',
+};
+
+@Injectable({ providedIn: 'root' })
 export class ThemeService {
-  get theme(): any {
-    return document.documentElement.getAttribute('theme');
+  toggleDark() {
+    this.setTheme(darkTheme);
   }
 
-  set theme(name: any) {
-    document.documentElement.setAttribute('theme', name);
+  toggleLight() {
+    this.setTheme(lightTheme);
+  }
+
+  private setTheme(theme: any = []) {
+    Object.keys(theme).forEach((k) =>
+      document.documentElement.style.setProperty(`--${k}`, theme[k])
+    );
   }
 }

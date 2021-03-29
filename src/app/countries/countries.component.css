@@ -1,11 +1,17 @@
 .card {
   margin-bottom: 30px;
   margin-left: 5px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
 }
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+
 }
 
 p {
@@ -25,13 +31,24 @@ img {
 }
 
 input {
-  width: 400px;
-  height: 40px;
+  width: 420px;
+  height: 45px;
+  border: none;
 }
 select {
-  width: 200px;
-  height: 40px;
+  width: 210px;
+  height: 45px;
+  border: none;
+  font-family: FontAwesome;
+
 }
+.list-group-itemul,
+li,
+a {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
 .country-panels {
   display: flex;
   flex-direction: row;
@@ -39,7 +56,10 @@ select {
 
   flex-wrap: wrap;
 }
-
+.form-control{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
 .form-control::placeholder {
   font-family: FontAwesome;
 }

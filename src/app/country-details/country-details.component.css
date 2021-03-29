@@ -11,13 +11,20 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(244, 246, 247, 0.363);
+  background-color: var(--background-color);
 }
 .card {
   max-width: 70vw;
   width: 60vw;
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
-
+.list-group-itemul,
+li,
+a {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
 @media only screen and (max-width: 768px) {
   /* For desktop: */
   .card {
@@ -27,6 +34,6 @@ img {
     max-height: 33vh;
   }
   li {
-    font-size: smaller ;
+    font-size: smaller;
   }
 }
