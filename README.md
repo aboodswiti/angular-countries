@@ -1,7 +1,7 @@
 # angular-countries
 
 ### Where in the world ?
-
+ ![](https://i.pinimg.com/originals/af/9a/61/af9a61ae90edb993e1df209c9c164fb0.gif)
 
 ## OVERVIEW:
 - This project displays all Countries in the world.
