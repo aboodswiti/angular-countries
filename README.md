@@ -1,27 +1,57 @@
-# Countries
+# angular-countries
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.2.
+### Where in the world ?
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## OVERVIEW:
+- This project displays all Countries in the world.
+- Also the site has a details page includes additional information about any country like border countries, subregion, Language.
+- Doing some UNIT TESTS: using jasmine & karma
 
-## Code scaffolding
+### [Firbase Demo Link](https://countries-ang.web.app/countries)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## User story
+### As a user,
+-  I can see all country in home page.
+-  I can search for any country by name or capital.
+-  I can choose any continent and see the countries in it and I can search only within that continent.
+-  I can click on Dark Theme on Navbar to toggle to dark mode.
+-  I can click on back button to get back to the page before.
+-  I can click Title on Navbar to go on home bage.
+-  I can click on a country to see more detailed information
+-  I can click on border button to see border countries.
+-  I can click on border countries and go to details
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## How to Use this project !!
+### In terminal
+- Clone these repo:
+```
+git clone https://github.com/aboodswiti/angular-countries.git
+cd angular-countries
+npm i
+```
+- Run the app:
+```
+npm start
+```
+## Run the test
+- In terminal
+```
+ng test
+```
+- You will see browser window about this test and see bass test and failing
 
-## Running unit tests
+## Used Technologies
+- Anguler
+- Typescript 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### For css
+- Bootstrap
 
-## Running end-to-end tests
+### For deploy
+- Firebase
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+### API
+- [REST Countries API](https://restcountries.eu/)
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
