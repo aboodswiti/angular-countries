@@ -10,6 +10,8 @@
 
 ### [Firbase Demo Link](https://countries-ang.web.app/countries)
 
+[Imgur](https://imgur.com/ZAV0UIc)
+
 ## User story
 ### As a user,
 -  I can see all country in home page.
