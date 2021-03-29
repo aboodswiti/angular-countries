@@ -17,7 +17,7 @@
 -  I can choose any continent and see the countries in it and I can search only within that continent.
 -  I can click on Dark Theme on Navbar to toggle to dark mode.
 -  I can click on back button to get back to the page before.
--  I can click in Where in the world? on header to go on home bage.
+-  I can click Title on Navbar to go on home bage.
 -  I can click on a country to see more detailed information
 -  I can click on border button to see border countries.
 -  I can click on border countries and go to details
