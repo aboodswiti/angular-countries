@@ -43,6 +43,7 @@ npm start
 ng test
 ```
 - You will see browser window about this test and see bass test and failing
+- or you can see the tests in terminal
 
 ## Used Technologies
 - Anguler
