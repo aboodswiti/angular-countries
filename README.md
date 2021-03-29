@@ -27,7 +27,7 @@
 ### In terminal
 - Clone these repo:
 ```
-git clone gh repo clone aboodswiti/angular-countries
+git clone https://github.com/aboodswiti/angular-countries.git
 cd angular-countries
 npm i
 ```
