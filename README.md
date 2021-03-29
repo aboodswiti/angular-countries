@@ -15,7 +15,7 @@
 -  I can see all country in home page.
 -  I can search for any country by name or capital.
 -  I can choose any continent and see the countries in it and I can search only within that continent.
--  I can click on Dark Theme on header to change mode from light to dark Also, I can reverse the mode from dark to light. page about this country.
+-  I can click on Dark Theme on Navbar to toggle to dark mode.
 -  I can click on back button to get back to the page before.
 -  I can click in Where in the world? on header to go on home bage.
 -  I can click on a country to see more detailed information
