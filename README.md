@@ -13,7 +13,7 @@
   ![](https://i.imgur.com/ZAV0UIc.gif)
 
 ## User story
-### As a user,
+### As a user:
 -  I can see all country in home page.
 -  I can search for any country by name or capital.
 -  I can choose any continent and see the countries in it and I can search only within that continent.
@@ -43,7 +43,7 @@ npm start
 ng test
 ```
 - You will see browser window about this test and see bass test and failing
-- or you can see the tests in terminal
+- Also you can see the tests at terminal
 
 ## Used Technologies
 - Anguler
