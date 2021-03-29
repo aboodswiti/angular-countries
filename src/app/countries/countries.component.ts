@@ -56,7 +56,8 @@ export class CountriesComponent implements OnInit {
             .includes(this.searchName.trim().toLocaleLowerCase()) ||
           country.capital
             .toLowerCase()
-            .includes(this.searchName.trim().toLocaleLowerCase())
+            .includes(this.searchName.trim().toLocaleLowerCase()) ||
+          country.nativeName.includes(this.searchName.trim())
         );
       }
     });
