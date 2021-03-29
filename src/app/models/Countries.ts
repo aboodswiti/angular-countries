@@ -8,4 +8,6 @@ export type Countries = {
   population: number;
   languages: Array<object>;
   borders: string[];
+  nativeName:string;
+
 };

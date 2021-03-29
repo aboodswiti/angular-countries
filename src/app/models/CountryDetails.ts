@@ -6,4 +6,6 @@ export type CountryDetails = {
   population: number;
   borders: string[];
   flag: string;
+  nativeName:string;
+
 };
