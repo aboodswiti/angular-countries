@@ -10,7 +10,7 @@
 
 ### [Firbase Demo Link](https://countries-ang.web.app/countries)
 
-[img]https://i.imgur.com/ZAV0UIc.gif[/img]
+![](https://i.imgur.com/ZAV0UIc.gif)
 
 ## User story
 ### As a user,
